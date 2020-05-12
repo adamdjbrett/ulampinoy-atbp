@@ -1,9 +1,9 @@
 {
-  "title": "Ulampinoy Atbp.",
-  "url": "https://ulampinoy.com",
+  "title": "☕️ Virtual Comedy Café",
+  "description": "Celebrating student amateur stand-up comedy.",
+  "url": "https://www.virtualcomedycafe.com/",
   "author": {
-    "name": "Chef Ulam",
-    "email": "chef@ulampinoy.com",
-    "github": "https://github.com/ulampinoy"
+    "name": "Ken Frieden",
+    "email": "kfrieden@syr.edu"
   }
 }

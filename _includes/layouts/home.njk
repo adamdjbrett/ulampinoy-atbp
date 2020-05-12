@@ -49,11 +49,11 @@ section: home
 						{{ post.url }}
 						{% endif %}
 						">
-						<img class="cover-image" src="{{ post.data.coverImage }}?nf_resize=fit&h=255" />
+						<img class="cover-image" src="{{ post.data.coverImage }}?nf_resize=fit&h=255" alt="{{ post.data.title }}" />
 					</a>
 				</div>
 				<div class="article-card__copy">
-					<span class="whetter">{{ post.data.whetter }}</span>
+					<span class="postSubcategory">{{ post.data.postSubcategory }}</span>
 					<h3>
 						<a href="
 						{% if post.data.link %}
@@ -68,20 +68,20 @@ section: home
 				</div>
 				</article>
 				{% endfor %}
-				<p><a href="/blog/">See more Blog &rArr;</a>
+				<p><a href="/blog/">Read our blog &rArr;</a>
 				</p>
 		</div>
 	</section>
 
 	<section class="section-Videos">
-		<h2>📽️ Cook-along Video Recipes</h2>
+		<h2>📽️ Stand-up Comedy Performances</h2>
 		<div class="Cols videosGrid">
 			{% set videolist = collections.video | reverse %}
 			{% for post in videolist.slice(1, 7) %}
 			<article{% if post.url == url %} data-current="current item" {% endif %} class="article-card">
 				<div class="article-card__cover">
 					<a href="{{ post.url | url }}">
-						<img src="{{ post.data.coverImage }}?nf_resize=fit&h=640" />
+						<img src="{{ post.data.coverImage }}?nf_resize=fit&h=640" alt="{{ post.data.title }}" />
 					</a>
 				</div>
 				<div class="article-card__copy">
@@ -93,25 +93,24 @@ section: home
 				</article>
 				{% endfor %}
 		</div>
-		<p><a href="/video/">See more Video Recipes &rArr;</a>
+		<p><a href="/video/">See more Videos &rArr;</a>
 		</p>
+	</div>
 	</section>
-</div>
-<section>
-	{% include "components/billboard-banner-ads.njk" %}
-</section>
+
+
 <section class="section-Intro">
 	<div class="bottomBillboard">
-		<div class="bottomBillboard-image" style="background-image: url(/static/images/sindi-kalan.jpg)"></div>
+		<div class="bottomBillboard-image" style="background-image: url(/static/images/khara-woods-6hUR284gLJY-unsplash.jpg)"></div>
 	</div>
 	<div class="bottomBillboard-content">
-		<h2>Mabuhay! Welcome po kayo sa Ulampinoy 👋🏼</h2>
-		<p>Ang Ulampinoy ay koleksyon online ng aming <a href="/video/">mga lutung-bahay recipes</a>. Kasama rin ang <a
-				href="/blog/">aming blog</a> kung saan ibinabahagi naming adbentyur sa pagkain at ang iba't-iba pang mga
-			bagay na aming natutuklasan, natututuhan at sa paanuman ay kapakipakinabang sa amin.</p>
+		<h2>Welcome to the Virutal Comedy Café</h2>
+		<p><a href="/video/">Watch More Comedy 🎭</a>. or visit <a href="https://www.jewishhumorandsatire.com">Jewish Humor and Satire.</a><br />
+			Mlkshk coloring book fashion axe stumptown artisan post-ironic gastropub skateboard next level hammock activated charcoal food truck succulents palo santo.
+			</p>
 	</div>
 	<div class="bottomBillboard-imageSW">
-		<img class="" src="static/images/sindi-kalan.jpg" alt="">
+		<img class="" src="static/images/khara-woods-6hUR284gLJY-unsplash.jpg" alt="Cafe Photo by Khara Woods on Unsplash">
 
 	</div>
 </section>

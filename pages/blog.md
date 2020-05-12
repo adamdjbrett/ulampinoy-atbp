@@ -4,6 +4,6 @@ title: What's New
 tags:
   - nav
 navtitle: Blog
-date: 2017-01-01
-permalink: /blog/index.html
+date: 2020-05-11
+permalink: /blog/
 ---

@@ -1,5 +1,0 @@
-{
-  "layout": "layouts/glossary-post.njk",
-  "permalink": "{{ section }}/{{ title | slug }}/index.html",
-  "tags": "glossary"
-}

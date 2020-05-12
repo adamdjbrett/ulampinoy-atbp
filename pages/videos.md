@@ -1,9 +1,9 @@
 ---
 layout: layouts/videos.njk
-title: Cook-along Video Recipes
+title: 'Virtual Comedy Café Videos'
 tags:
   - nav
 navtitle: Videos
-date: 2017-01-01
-permalink: /video/index.html
+date: 2020-05-11
+permalink: /video/
 ---

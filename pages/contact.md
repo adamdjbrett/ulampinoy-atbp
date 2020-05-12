@@ -1,9 +1,8 @@
 ---
 layout: layouts/contact.njk
-title: 📮 Express Mail
+title: Contact
 navtitle: Contact
 section: contact
-date: 2019-01-18
-permalink: /contact/index.html
+date: 2020-05-11
+permalink: /contact/
 ---
-May gusto ba kayong ipaabot sa amin? Pakisuyong mag-fill-up ng contact form sa baba. Maraming salamat!

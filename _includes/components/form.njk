@@ -1,15 +1,17 @@
 <section id="contact-us" class="contact-form">
-  <h2>📝 Makipag-ugnayan sa amin</h2>
+  <h2>📝 Contact Us</h2>
   <div>
-    <p>Gamitin ang contact form para mag-send ng mensahe sa amin. Salamat!</p>
+    <p>Virtual Comedy Cafe is a stand-up related side project of Jewish Humor and Satire. Contact Dr. Ken Frieden using the form below or at <a href="mailto:kfrieden@syr.edu">kfrieden@syr.edu</a><br />
+      Please use the contact form to send us a message. Thank you!
+    </p>
   </div>
   <form name="contact" method="POST" netlify>
-    <label for="name">Pangalan</label>
-    <input type="text" name="name" id="name" autocomplete="name" placeholder="Pangalan ninyo po dito" title="Please enter your name" required>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" autocomplete="name" placeholder="Your name is here" title="Please enter your name" required>
     <label for="email">Email</label>
-    <input type="email" name="email" id="email" autocomplete="email" placeholder="Dito naman ang email" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-    <label for="message">Ang inyong mensahe</label>
-    <textarea name="message" id="message" placeholder="Paki-sulat dito ang inyong mensahe" rows="7" required></textarea>
-    <button type="submit" name="submit">Ipadala sa amin</button>
+    <input type="email" name="email" id="email" autocomplete="email" placeholder="Your email is here" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+    <label for="message">Your message</label>
+    <textarea name="message" id="message" placeholder="Please write your message here" rows="7" required></textarea>
+    <button type="submit" name="submit">Submit</button>
   </form>
 </section>

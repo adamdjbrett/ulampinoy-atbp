@@ -268,7 +268,7 @@ button {
 }
 
 /* Ulam Styles */
-.whetter {
+.postSubcategory {
   display: block;
   color: var(--usok);
   font-size: 0.7rem;
@@ -1113,7 +1113,7 @@ article ol li {
   margin-left: 0.2em;
 }
 
-.spotlight .whetter {
+.spotlight .postSubcategory {
   font-size: 0.8rem;
 }
 

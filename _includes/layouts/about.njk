@@ -6,14 +6,11 @@ section: home
 <article class="article-post">
     <div class="article-post-wrapper grid">
         <header class="pamilya">
-            <h1>Ang Ulampinoy: 👨🏻👩🏻👧🏻👦🏻</h1>
+            <h1>{{ title }}</h1>
         </header>
         <section>
-            <p>Kami ay pamilyang Filipino na kasalukuyang naninirahan sa España. Family project namin ang <b>Ulampinoy,
-                    Atbp.</b> Matatagpuan dito ang koleksyon ng aming mga lutung-bahay, video recipes, blog at marami
-                pang iba.</p>
+        
             {{ layoutContent | safe }}
-            {% include "components/form.njk" %}
         </section>
     </div>
 </article
