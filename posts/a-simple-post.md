@@ -5,6 +5,7 @@ postSubcategory: cool category
 sideNote: this is a project of Jewish Humor and Satire
 sideImage: /static/images/side.jpg
 coverImage: /static/images/cooking.jpg
+thumbnail: /static/images/posts/thumbnails/cooking_tn.jpg
 tags:
   - demo-content
   - simple-post

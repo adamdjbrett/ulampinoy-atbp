@@ -4,7 +4,8 @@ title: 'Tinder and trees don‘t mix'
 date: 2020-05-06T24:04:44.000Z
 description: 'Jacob tells the story of his worst date maybe ever?'
 youtube: "nRhWQhd2oDk"
-coverImage: /static/images/jacob-bellotti-tinder-trees.jpg
+coverImage: /static/images/videos/jacob-bellotti-tinder-trees.jpg
+thumbnail: /static/images/videos/thumbnails/jacob-bellotti-tinder-trees_tn.jpg
 tags:
   - video
   - comedy

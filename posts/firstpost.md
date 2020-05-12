@@ -6,6 +6,7 @@ postSubcategory: cool category
 sideNote: Fizzy Water
 sideImage: https://picsum.photos/400
 coverImage: /static/images/173-1920x1080.jpg
+thumbnail: /static/images/posts/thumbnails/173-1920x1080_tn.jpg
 tags:
   - tech
   - environment

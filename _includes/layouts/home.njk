@@ -36,6 +36,7 @@ section: home
 </section>
 
 <div class="lazyimages">
+
 <div class="grid grid-Home">
 	<section class="section-Blog">
 		<div class="Cols blogGrid">
@@ -52,7 +53,7 @@ section: home
 						"
 						>
 						<!-- old <img class="cover-image" src="{{ post.data.coverImage }}?nf_resize=fit&h=255" alt="{{ post.data.title }}" />-->
-						<img class="cover-image" src="{{ post.data.coverImage }}" height="255px" alt="{{ post.data.title }}" />
+						<img class="cover-image" src="{{ post.data.thumbnail }}" height="255px" alt="{{ post.data.title }}" />
 					</a>
 				</div>
 				<div class="article-card__copy">
@@ -77,9 +78,7 @@ section: home
 	</section>
 
 
-
 	<section class="section-Videos">
-
 		<h2>📽️ Stand-up Comedy Performances</h2>
 		<div class="Cols videosGrid">
 			{% set videolist = collections.video | reverse %}
@@ -88,7 +87,7 @@ section: home
 				<div class="article-card__cover">
 					<a href="{{ post.url | url }}">
 						<!-- old way <img src="{{ post.data.coverImage }}?nf_resize=fit&h=640" alt="{{ post.data.title }}" />-->
-						<img src="{{ post.data.coverImage }}" width="640px" alt="{{ post.data.title }}" />
+						<img src="{{ post.data.thumbnail }}" width="640px" alt="{{ post.data.title }}" />
 					</a>
 				</div>
 				<div class="article-card__copy">
@@ -103,8 +102,7 @@ section: home
 		<p><a href="/video/">See more Videos &rArr;</a>
 		</p>
 	</div>
-
-	</section>
+</section>
 
 
 <section class="section-Intro">
@@ -113,14 +111,14 @@ section: home
 		<div class="bottomBillboard-image" style="background-image: url(/static/images/khara-woods-6hUR284gLJY-unsplash.jpg)"></div>
 	</div>
 	<div class="bottomBillboard-content">
-		<h2>Welcome to the Virutal Comedy Café</h2>
-		<p><a href="/video/">Watch More Comedy 🎭</a>. or visit <a href="https://www.jewishhumorandsatire.com">Jewish Humor and Satire.</a><br />
+		<h2>Welcome to Virutal Comedy Café</h2>
+		<p>Please <a href="/video/">watch some Comedy 🎭</a>. or visit <a href="https://www.jewishhumorandsatire.com">Jewish Humor and Satire.</a><br />
 			Mlkshk coloring book fashion axe stumptown artisan post-ironic gastropub skateboard next level hammock activated charcoal food truck succulents palo santo.
 			</p>
 	</div>
 	<div class="bottomBillboard-imageSW">
-		<img class="" src="static/images/khara-woods-6hUR284gLJY-unsplash.jpg" alt="Cafe Photo by Khara Woods on Unsplash">
+		<img src="static/images/khara-woods-6hUR284gLJY-unsplash.jpg" alt="Cafe Photo by Khara Woods on Unsplash">
 	</div>
-
 </section>
+
 </div>

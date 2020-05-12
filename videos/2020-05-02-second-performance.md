@@ -4,7 +4,8 @@ title: 'Second Performance'
 date: 2020-05-02T24:04:44.000Z
 description: Rewatch the second performance of the Virtual Comedy Cafe
 youtube: "a98rxqIelBc"
-coverImage: /static/images/second-performance.jpg
+coverImage: /static/images/videos/second-performance.jpg
+thumbnail: /static/images/videos/thumbnails/second-performance_tn.jpg
 tags:
   - video
   - comedy

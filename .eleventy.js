@@ -40,7 +40,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(lazyImagesPlugin, {
     imgSelector: '.lazyimages img',
-  });
+    cacheFile: '.lazyimages.json',
+    });
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
@@ -84,15 +85,7 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  // only content in the `glossary/` directory and sort the entries in alphabetical order
-  eleventyConfig.addCollection("glossary", function (collection) {
-    return collection.getFilteredByGlob("glossary/**/*.md", "glossary/*.md").sort((a, b) => {
-      if (a.data.title > b.data.title) return -1;
-      else if (a.data.title < b.data.title) return 1;
-      else return 0;
-    })
-  });
-
+  
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/images/");
   eleventyConfig.addPassthroughCopy("_includes/assets/");

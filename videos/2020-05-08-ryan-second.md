@@ -4,7 +4,8 @@ title: 'Ryan has room envy'
 date: 2020-05-08T24:04:44.000Z
 description: 'Why does your room look like the set of Tiger King?'
 youtube: "ww7JFgmoSmA"
-coverImage: /static/images/ryan-micho-room-envy.jpg
+coverImage: /static/images/videos/ryan-micho-room-envy.jpg
+thumbnail: /static/images/videos/thumbnails/ryan-micho-room-envy_tn.jpg
 tags:
   - video
   - comedy
