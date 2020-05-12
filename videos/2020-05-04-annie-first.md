@@ -3,7 +3,7 @@ layout: "layouts/video.njk"
 title: 'Attending a Bat Mtizvah'
 date: 2020-05-04T24:04:44.000Z
 description: Introducing Annie Gorham
-youtube: "MDvq3jqMdd4"
+youtube: "IFe674n_IAc"
 coverImage: /static/images/annie-gorham-bat-mitzvah.jpg
 tags:
   - video

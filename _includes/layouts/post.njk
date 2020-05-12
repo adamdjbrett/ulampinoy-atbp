@@ -5,7 +5,8 @@ section: page
 
 <article class="article-post video">
   <div class="billboard">
-    <img src="{{ coverImage }}?nf_resize=fit&w=1200" />
+    <!--old way <img src="{{ sideImage }}?nf_resize=fit&w=1200" />-->
+    <img src="{{ coverImage }}" width="1200px" />
   </div>
   <div class="article-post-wrapper grid">
     <header>
@@ -25,7 +26,8 @@ section: page
           {{ sideNote }}
         </p>
         {% if sideImage %}
-        <img src="{{ sideImage }}?nf_resize=fit&w=600" />
+        <!--old way <img src="{{ sideImage }}?nf_resize=fit&w=600" width="600" />-->
+        <img src="{{ sideImage }}" width="600" />
         {% endif %}
         {% endif %}
 

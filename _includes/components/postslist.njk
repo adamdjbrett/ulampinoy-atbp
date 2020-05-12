@@ -5,7 +5,8 @@
 		<article{% if post.url == url %} data-current="current item" {% endif %} class="article-card">
 			<div class="article-card__cover">
 				<a href="{{ post.url | url }}">
-					<img src="{{ post.data.coverImage }}?nf_resize=fit&w=800" />
+					<!--old way <img src="{{ sideImage }}?nf_resize=fit&w=800" />-->
+					<img src="{{ post.data.coverImage }}" width="800px" />
 				</a>
 			</div>
 			<div class="article-card__copy">
@@ -24,6 +25,6 @@
 			</div>
 			</article>
 			{% endfor %}
-			
+
 	</div>
 </div>

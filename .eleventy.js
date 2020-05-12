@@ -2,6 +2,10 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+//const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+const fs = require('fs');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
@@ -29,6 +33,33 @@ module.exports = function (eleventyConfig) {
       return code;
     }
     return minified.code;
+  });
+
+  // Plugins
+  eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(syntaxHighlight);
+  //eleventyConfig.addPlugin(lazyImagesPlugin);
+
+  // Browsersync Overrides
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync('_site/404.html');
+
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      },
+    },
+    ui: false,
+    ghostMode: false
+  });
+
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
   // Minify HTML output
@@ -63,7 +94,7 @@ module.exports = function (eleventyConfig) {
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/images/");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
-  
+
 
 
   /* Markdown Plugins */

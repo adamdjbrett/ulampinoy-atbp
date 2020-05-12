@@ -3,7 +3,7 @@ layout: "layouts/video.njk"
 title: 'Syracuse billboards are the worst'
 date: 2020-05-07T24:04:44.000Z
 description: Annie struggles to understand Syracuse‘s billboard scene.
-youtube: "MDvq3jqMdd4"
+youtube: "5O1kxD5QzLM"
 coverImage: /static/images/annie-gorham-syracuse-billboards.jpg
 tags:
   - video

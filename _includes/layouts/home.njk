@@ -8,16 +8,16 @@ section: home
 		{% set videolist = collections.video | reverse %}
 		{% for post in videolist.slice(0, 1) %}
 		<article{% if post.url == url %} data-current="current item" {% endif %} class="article-card">
-			<a href="{{ post.url | url }}">
+			<a href="{{ post.url | url }}" title="{{ post.data.title }}">
 				<div class="article-card__cover" style="background-image: url({{ post.data.coverImage }})"></div>
 			</a>
 			<div class="article-card__copy">
 				<h3>
-					<a href="{{ post.url | url }}">{{ post.data.title }}</a>
+					<a href="{{ post.url | url }}" title="{{ post.data.title }}">{{ post.data.title }}</a>
 				</h3>
 				<p>{{ post.data.description }}</p>
 				{% if post.data.ctaText %}
-				<a href="{{ post.url | url }}">
+				<a href="{{ post.url | url }}" title="{{ post.data.title }}">
 					<div class="article-card__cta">
 						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
@@ -35,6 +35,7 @@ section: home
 	</div>
 </section>
 
+
 <div class="grid grid-Home">
 	<section class="section-Blog">
 		<div class="Cols blogGrid">
@@ -48,8 +49,10 @@ section: home
 						{% else %}
 						{{ post.url }}
 						{% endif %}
-						">
+						"
+						>
 						<img class="cover-image" src="{{ post.data.coverImage }}?nf_resize=fit&h=255" alt="{{ post.data.title }}" />
+
 					</a>
 				</div>
 				<div class="article-card__copy">
@@ -70,10 +73,12 @@ section: home
 				{% endfor %}
 				<p><a href="/blog/">Read our blog &rArr;</a>
 				</p>
-		</div>
 	</section>
+	</div>
+
 
 	<section class="section-Videos">
+
 		<h2>📽️ Stand-up Comedy Performances</h2>
 		<div class="Cols videosGrid">
 			{% set videolist = collections.video | reverse %}
@@ -96,6 +101,7 @@ section: home
 		<p><a href="/video/">See more Videos &rArr;</a>
 		</p>
 	</div>
+
 	</section>
 
 
@@ -111,6 +117,5 @@ section: home
 	</div>
 	<div class="bottomBillboard-imageSW">
 		<img class="" src="static/images/khara-woods-6hUR284gLJY-unsplash.jpg" alt="Cafe Photo by Khara Woods on Unsplash">
-
 	</div>
 </section>

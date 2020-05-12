@@ -1,9 +1,15 @@
 {
   "title": "☕️ Virtual Comedy Café",
   "description": "Celebrating student amateur stand-up comedy.",
-  "url": "https://www.virtualcomedycafe.com/",
+  "url": "https://www.virtualcomedycafe.com",
   "author": {
     "name": "Ken Frieden",
     "email": "kfrieden@syr.edu"
+  },
+  "feed": {
+    "subtitle": "Writing and performing stand-up comedy virutally for all to see.",
+    "filename": "feed.xml",
+    "path": "/feed.xml",
+    "id": "https://www.virtualcomedycafe.com"
   }
 }
