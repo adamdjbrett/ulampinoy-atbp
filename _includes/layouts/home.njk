@@ -35,7 +35,7 @@ section: home
 	</div>
 </section>
 
-
+<div class="lazyimages">
 <div class="grid grid-Home">
 	<section class="section-Blog">
 		<div class="Cols blogGrid">
@@ -51,8 +51,8 @@ section: home
 						{% endif %}
 						"
 						>
-						<img class="cover-image" src="{{ post.data.coverImage }}?nf_resize=fit&h=255" alt="{{ post.data.title }}" />
-
+						<!-- old <img class="cover-image" src="{{ post.data.coverImage }}?nf_resize=fit&h=255" alt="{{ post.data.title }}" />-->
+						<img class="cover-image" src="{{ post.data.coverImage }}" height="255px" alt="{{ post.data.title }}" />
 					</a>
 				</div>
 				<div class="article-card__copy">
@@ -79,6 +79,7 @@ section: home
 
 
 	<section class="section-Videos">
+
 		<h2>📽️ Stand-up Comedy Performances</h2>
 		<div class="Cols videosGrid">
 			{% set videolist = collections.video | reverse %}
@@ -86,7 +87,8 @@ section: home
 			<article{% if post.url == url %} data-current="current item" {% endif %} class="article-card">
 				<div class="article-card__cover">
 					<a href="{{ post.url | url }}">
-						<img src="{{ post.data.coverImage }}?nf_resize=fit&h=640" alt="{{ post.data.title }}" />
+						<!-- old way <img src="{{ post.data.coverImage }}?nf_resize=fit&h=640" alt="{{ post.data.title }}" />-->
+						<img src="{{ post.data.coverImage }}" width="640px" alt="{{ post.data.title }}" />
 					</a>
 				</div>
 				<div class="article-card__copy">
@@ -101,10 +103,12 @@ section: home
 		<p><a href="/video/">See more Videos &rArr;</a>
 		</p>
 	</div>
+
 	</section>
 
 
 <section class="section-Intro">
+
 	<div class="bottomBillboard">
 		<div class="bottomBillboard-image" style="background-image: url(/static/images/khara-woods-6hUR284gLJY-unsplash.jpg)"></div>
 	</div>
@@ -117,4 +121,6 @@ section: home
 	<div class="bottomBillboard-imageSW">
 		<img class="" src="static/images/khara-woods-6hUR284gLJY-unsplash.jpg" alt="Cafe Photo by Khara Woods on Unsplash">
 	</div>
+
 </section>
+</div>

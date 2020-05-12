@@ -4,7 +4,7 @@ const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-//const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const fs = require('fs');
 
 module.exports = function (eleventyConfig) {
@@ -38,7 +38,9 @@ module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
-  //eleventyConfig.addPlugin(lazyImagesPlugin);
+  eleventyConfig.addPlugin(lazyImagesPlugin, {
+    imgSelector: '.lazyimages img',
+  });
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
