@@ -32,9 +32,11 @@
   "dependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "clean-css": "^4.2.1",
+    "eleventy-plugin-image": "^1.0.1",
     "eleventy-plugin-lazyimages": "^1.1.1",
     "html-minifier": "^3.5.21",
     "netlify-cli": "^2.11.19",
+    "sharp-cli": "^1.13.1",
     "uglify-es": "^3.3.9"
   }
 }

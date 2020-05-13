@@ -1,11 +1,13 @@
 const { DateTime } = require("luxon");
+const fs = require('fs');
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const pluginImage = require('eleventy-plugin-image')
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
-const fs = require('fs');
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
@@ -38,27 +40,22 @@ module.exports = function (eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(lazyImagesPlugin, {
-    imgSelector: '.lazyimages img',
-    cacheFile: '.lazyimages.json',
-    });
+  eleventyConfig.addPlugin(pluginImage, {
+        input: 'static/images',
+        output: 'static/uploads',
+        include: ['img/*.+(jpg|jpeg|png)'],
+        inlineBelow: 10000,
+        compressionLevel: 8,
+        quality: 70,
+        sizes: [255, 400, 600, 1200],
+        webpOptions: { quality: 75, lossless: false, force: true },
+        webp: true,
+        scriptSrc: 'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
+      });
+      eleventyConfig.addPlugin(lazyImagesPlugin, {
+        imgSelector: '.lazyimages img',
+      });
 
-  // Browsersync Overrides
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404.html');
-
-        browserSync.addMiddleware("*", (req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
-        });
-      },
-    },
-    ui: false,
-    ghostMode: false
-  });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
@@ -85,12 +82,27 @@ module.exports = function (eleventyConfig) {
     });
   });
 
-  
+
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/images/");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
 
+  // Browsersync Overrides
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync('_site/404.html');
 
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      },
+    },
+    ui: false,
+    ghostMode: false
+  });
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");

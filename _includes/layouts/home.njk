@@ -53,7 +53,7 @@ section: home
 						"
 						>
 						<!-- old <img class="cover-image" src="{{ post.data.coverImage }}?nf_resize=fit&h=255" alt="{{ post.data.title }}" />-->
-						<img class="cover-image" src="{{ post.data.thumbnail }}" height="255px" alt="{{ post.data.title }}" />
+						<img class="cover-image" src="{{ post.data.thumbnail }}" data-aspect-fit="contain" alt="{{ post.data.title }}" />
 					</a>
 				</div>
 				<div class="article-card__copy">
@@ -87,7 +87,7 @@ section: home
 				<div class="article-card__cover">
 					<a href="{{ post.url | url }}">
 						<!-- old way <img src="{{ post.data.coverImage }}?nf_resize=fit&h=640" alt="{{ post.data.title }}" />-->
-						<img src="{{ post.data.thumbnail }}" width="640px" alt="{{ post.data.title }}" />
+						<img src="{{ post.data.thumbnail }}" data-aspect-fit="contain" alt="{{ post.data.title }}" />
 					</a>
 				</div>
 				<div class="article-card__copy">
@@ -117,7 +117,7 @@ section: home
 			</p>
 	</div>
 	<div class="bottomBillboard-imageSW">
-		<img src="static/images/khara-woods-6hUR284gLJY-unsplash.jpg" alt="Cafe Photo by Khara Woods on Unsplash">
+		<img src="static/images/khara-woods-6hUR284gLJY-unsplash.jpg" alt="Cafe Photo by Khara Woods on Unsplash" data-aspect-fit="contain">
 	</div>
 </section>
 
