@@ -42,7 +42,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginImage, {
         input: 'static/images',
-        output: 'static/uploads',
+        output: 'static/images',
         include: ['img/*.+(jpg|jpeg|png)'],
         inlineBelow: 10000,
         compressionLevel: 8,
