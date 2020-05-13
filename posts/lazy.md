@@ -6,7 +6,7 @@ description: Lazy Load
 postSubcategory: lazy
 sideNote: please work
 sideImage: /static/images/side.jpg
-coverImage: /static/images/cooking.jpg
+coverImage: /static/images/posts/cooking.jpg
 thumbnail: /static/images/posts/thumbnails/cooking_tn.jpg
 tags:
   - note
