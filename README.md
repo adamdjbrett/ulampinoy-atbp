@@ -5,6 +5,8 @@
   - sitemap
   - feed
   - google, yandex, bing
+  - do I need thumbnail on the homepage or can I just go with coverImage?
+    - switched homepage to coverImage and removed thumbnail lets see what happens
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
 
