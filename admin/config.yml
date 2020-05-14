@@ -46,5 +46,5 @@ collections:
       - { label: "Summary", name: "description", widget: "text" }
       - { label: "Featured Image", name: "coverImage", widget: "image" }
       - { label: "YouTube", name: "youtube", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["video"] }
       - { label: "Body", name: "body", widget: "markdown" }
