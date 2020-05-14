@@ -18,7 +18,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "description", widget: "text" }
-      - { label: "Featured Image", name: "coverImage:", widget: "image" }
+      - { label: "Featured Image", name: "coverImage", widget: "image" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
   # Our pages e.g. About
@@ -43,7 +43,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Summary", name: "description", widget: "text" }
-      - { label: "Featured Image", name: "coverImage:", widget: "image" }
+      - { label: "Featured Image", name: "coverImage", widget: "image" }
       - { label: "YouTube", name: "youtube", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
