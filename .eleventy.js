@@ -86,7 +86,7 @@ module.exports = function (eleventyConfig) {
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/images/");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
-  eleventyConfig.addPassthroughCopy('/admin/config.yml');
+  eleventyConfig.addPassthroughCopy('admin/config.yml');
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
