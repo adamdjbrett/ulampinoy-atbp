@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Custom selector demo
+title: Custom selector demo - eleventy-plugin-lazyimages
 date: 2020-05-01
 description: Lazy Load
 postSubcategory: lazy
@@ -12,7 +12,7 @@ tags:
   - note
   - updates
 ---
-# Custom selector demo  - eleventy-plugin-lazyimages
+# Custom selector demo
 
 This is a demo of
 [eleventy-plugin-lazyimages](https://github.com/liamfiddler/eleventy-plugin-lazyimages)
