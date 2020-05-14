@@ -2,7 +2,7 @@
 title: I love Netlify CMS
 date: 2020-05-14T05:31:35.107Z
 description: Testing Netlify CMS
-coverImage: /static/images/brickwall-shutterstock-purchased-kfrieden.jpg
+coverImage: /static/images/netlify-cms-blog-featured-image-02.png
 postSubcategory:
   - awesome
 tags:
