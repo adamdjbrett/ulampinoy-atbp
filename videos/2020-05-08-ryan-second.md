@@ -1,6 +1,6 @@
 ---
 layout: "layouts/video.njk"
-title: 'Ryan has room envy'
+title: 'The struggles of having class in your childhood bedroom'
 date: 2020-05-08T24:04:44.000Z
 description: 'Why does your room look like the set of Tiger King?'
 youtube: "ww7JFgmoSmA"
@@ -11,4 +11,5 @@ tags:
   - comedy
   - solo
 ---
-Thank you to the students of the Spring 2020 class **Jewish Humor and Satire** for participating in this wonderful exercise.
+
+"I think it's much more fun to be laughing than to not be laughing, so I try to make people laugh as much as I can. Stand-up comedy lets me rant in a humorous way about whatever I find important to discuss, and hopefully the audience has fun as I do it." -Ryan Micho
