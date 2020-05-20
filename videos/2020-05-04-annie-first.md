@@ -11,4 +11,4 @@ tags:
   - comedy
   - solo
 ---
-Thank you to the students of the Spring 2020 class **Jewish Humor and Satire** for participating in this wonderful exercise.
+Annie started writing and performing stand up comedy two years ago and was thrilled to continue in college. Annie feels stand up is some of the most fun she has ever had and hopes to become a comedy writer in the future. She is currently a rising sophomore at Syracuse University with a major in Television, Radio, and Film and a minor in Women's and Gender Studies.
