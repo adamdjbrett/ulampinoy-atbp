@@ -8,8 +8,5 @@ date: 2020-05-11
 permalink: /about/
 layout: layouts/about.njk
 ---
-## ☕️ Virtual Comedy Café
-The Virtual Comedy Café celebrates amateur student stand up comedy. We are part of **[Jewish Humor and Satire](https://www.jewishhumorandsatire.com).**
-
-### Hipster placeholder text
-La croix blog fixie everyday carry banjo tofu vice organic. Kogi forage glossier, artisan keffiyeh raclette hoodie VHS art party enamel pin selvage taxidermy. Pickled street art coloring book, helvetica food truck artisan irony cardigan church-key. Locavore roof party VHS shaman af pitchfork narwhal squid crucifix chicharrones man bun tacos la croix.
+## Virtual Comedy Café
+Virtual Comedy Café 🎭 is associated with the popular site ![Jewish Humor and Satire logo](/images/jewish-humor-satire-logo-88x88.png) [Jewish Humor and Satire](http://jewishhumorandsatire.com), also on [facebook](https://www.facebook.com/jewhumorsatire) and with the [American Comedy Institute](https://www.facebook.com/AmericanComedyInstitute/)
