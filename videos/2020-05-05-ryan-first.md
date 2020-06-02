@@ -10,7 +10,7 @@ tags:
   - video
   - comedy
   - solo
-draft: true
+
 ---
 
 "I think it's much more fun to be laughing than to not be laughing, so I try to make people laugh as much as I can. Stand-up comedy lets me rant in a humorous way about whatever I find important to discuss, and hopefully the audience has fun as I do it." -Ryan Micho

@@ -10,7 +10,6 @@ tags:
   - video
   - comedy
   - solo
-draft: true  
 ---
 Jacob Bellotti is an up-and-coming comedy writer finishing up his last semester at Syracuse University. He grew up where everything happens: the great state of New Jersey. Throughout his childhood, he loved television, film, and comedy more than anything else. He decided to pursue a career in the entertainment industry, which started at the Newhouse School of Public Communications in 2016.
 

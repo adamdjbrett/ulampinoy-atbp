@@ -7,28 +7,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginImage = require('eleventy-plugin-image')
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
-const drafts = (item) => {
-  if (!eleventyVars.development && item.data.draft) {
-    // If not development, and draft is true, skip it.
-    return false
-  }
-  // Return everything by default.
-  return true;
-};
-const future = (item) => {
-  // If item date is before now it's safe to publish it.
-  if (item.date <= now) {
-    return true;
-  }
-
-  // If it's in the future we can publish it in development.
-  if (eleventyVars.development) {
-    return true;
-  }
-
-  // In future and not development, skip it.
-  return false;
-};
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
@@ -57,26 +35,8 @@ module.exports = function (eleventyConfig) {
     }
     return minified.code;
   });
-  function getPosts(collectionApi) {
-    const globs = [
-      './posts/*',
-      './videos/*',
-    ];
-    const now = new Date();
 
-    const drafts = (item) => {
-      // See function above.
-    };
-    const future = (item) => {
-      // See function above.
-    };
 
-    return collectionApi.getFilteredByGlob(globs)
-      .filter(item => !!item.data.permalink)
-      .filter(drafts)
-      .filter(future)
-      .reverse();
-  }
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
