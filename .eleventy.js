@@ -7,6 +7,14 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginImage = require('eleventy-plugin-image')
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+const drafts = (item) => {
+  if (!eleventyVars.development && item.data.draft) {
+    // If not development, and draft is true, skip it.
+    return false
+  }
+  // Return everything by default.
+  return true;
+};
 
 
 module.exports = function (eleventyConfig) {
