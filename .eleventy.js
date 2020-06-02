@@ -59,7 +59,8 @@ module.exports = function (eleventyConfig) {
   });
   function getPosts(collectionApi) {
     const globs = [
-      './_posts/*',
+      './posts/*',
+      './videos/*',
     ];
     const now = new Date();
 
