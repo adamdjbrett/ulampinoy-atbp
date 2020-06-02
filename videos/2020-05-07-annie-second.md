@@ -1,7 +1,7 @@
 ---
 layout: "layouts/video.njk"
 title: 'Syracuse billboards are the worst'
-date: 2020-05-07T24:04:44.000Z
+date: 2020-06-28T24:04:44.000Z
 description: Annie discusses the absurdity of Syracuse billboards.
 youtube: "5O1kxD5QzLM"
 coverImage: /static/images/videos/annie-gorham-syracuse-billboards.jpg

@@ -1,7 +1,7 @@
 ---
 layout: "layouts/video.njk"
 title: 'I was an Accident'
-date: 2020-05-03T24:04:44.000Z
+date: 2020-05-30T24:04:44.000Z
 description: Introducing Jacob Bellotti
 youtube: "q5iGqc_3Ksk"
 coverImage: /static/images/videos/jacob-bellotti-accidents.jpg

@@ -1,7 +1,7 @@
 ---
 layout: "layouts/video.njk"
 title: 'A quick-fix to the TV show The Bachelor'
-date: 2020-05-05T24:04:44.000Z
+date: 2020-06-14T24:04:44.000Z
 description: Introducing Ryan Micho
 youtube: "OATcrLFlGco"
 coverImage: /static/images/videos/ryan-micho-bachelor.jpg

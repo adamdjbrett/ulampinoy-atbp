@@ -1,7 +1,7 @@
 ---
 layout: "layouts/video.njk"
 title: 'Attending a Bat Mitzvah'
-date: 2020-05-04T24:04:44.000Z
+date: 2020-06-07T24:04:44.000Z
 description: Introducing Annie Gorham
 youtube: "IFe674n_IAc"
 coverImage: /static/images/videos/annie-gorham-bat-mitzvah.jpg
