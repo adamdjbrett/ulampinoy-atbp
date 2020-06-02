@@ -6,6 +6,7 @@ coverImage: /static/images/courtney-davis-maxresdefault.jpg
 youtube: RtCc43QwsBw
 tags:
   - video
-draft: true  
+draft: true
+permalink: false  
 ---
  Courtney Davis Performs at Stand Up New York on March 6th, 2020
