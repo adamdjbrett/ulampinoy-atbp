@@ -1,7 +1,7 @@
 {
   "title": "☕️ VIRTUAL COMEDY CAFÉ",
   "description": "Celebrating student amateur stand-up comedy.",
-  "url": "https://virtual-comedy-cafe.netlify.app",
+  "url": "https://www.virtualcomedycafe.com/",
   "author": {
     "name": "Schlemiel",
     "email": "streaming@virtualcomedycafe.com"
@@ -10,6 +10,6 @@
     "subtitle": "Writing and performing stand-up comedy virutally for all to see.",
     "filename": "feed.xml",
     "path": "/feed.xml",
-    "id": "https://virtual-comedy-cafe.netlify.app"
+    "id": "https://www.virtualcomedycafe.com/"
   }
 }
