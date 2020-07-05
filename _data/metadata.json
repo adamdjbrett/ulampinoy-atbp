@@ -4,7 +4,8 @@
   "url": "https://www.virtualcomedycafe.com",
   "author": {
     "name": "Schlemiel",
-    "email": "streaming@virtualcomedycafe.com"
+    "email": "streaming@virtualcomedycafe.com",
+    "authorHandle": "@jhumorsatire"
   },
   "feed": {
     "subtitle": "Writing and performing stand-up comedy virutally for all to see.",
