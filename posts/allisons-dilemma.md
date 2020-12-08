@@ -8,6 +8,6 @@ postSubcategory:
 tags:
   - Comedy
 ---
-Allison Scherger performs stand-up comedy in the third Syracuse University Student Stand-Up Show.
+**Allison Scherger** performs stand-up comedy in the third Syracuse University Student Stand-Up Show.
 
-ADD BIO
+In high school, Allison was voted "Class Wittiest" by her peers for her constant use of puns. Although she still enjoys them, Allison tried writing and performing stand-up in college and realized that she could take comedy much further. Allison is currently a junior studying Creative Advertising at SU, and she finds herself constantly producing funny ads. She wants to become an art director with hopes that she can use comedy in her future career and continue to write stand-up on the side.
