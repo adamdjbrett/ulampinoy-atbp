@@ -1,9 +1,9 @@
 ---
 layout: "layouts/video.njk"
 title: 'Second Performance'
-date: 2020-05-02T24:04:44.000Z
+date: 2020-12-11T08:04:44.000Z
 description: Rewatch the second performance of the Virtual Comedy Cafe
-youtube: "a98rxqIelBc"
+youtube: "jWzhSWOK8EE"
 coverImage: /static/images/videos/second-performance.jpg
 thumbnail: /static/images/videos/thumbnails/second-performance_tn.jpg
 tags:
@@ -11,7 +11,7 @@ tags:
   - comedy
   - show
 ---
-Thank you to the students of the Spring 2020 class **Jewish Humor and Satire** for participating in this wonderful exercise.
+Thank you to the students of the Fall 2020 class **Jewish Humor and Satire** for participating in this wonderful exercise.
 
 
 Featuring:
