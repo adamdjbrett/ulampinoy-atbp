@@ -1,9 +1,9 @@
 ---
-title: Allison's Dilemma
+title: "Allison’s Dilemma"
 date: 2020-12-08T17:40:23.801Z
 description: There are cures for mental illness, but Allison has another intractable issue.
 coverImage: /static/images/allison-w-pigtails.jpg
-youtube: https://youtu.be/2ORbuvdOhtI
+youtube: "2ORbuvdOhtI"
 tags:
   - Stand-Up
 ---
