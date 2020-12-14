@@ -1,4 +1,5 @@
 ---
+layout: "layouts/video.njk"
 title: "Griffin, Gryffindors, & Hufflepuffs"
 date: 2020-12-12T11:18:07.921Z
 description: "Griffin tells about his struggles, from childhood to college."
