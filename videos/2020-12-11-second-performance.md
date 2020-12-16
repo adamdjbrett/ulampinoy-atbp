@@ -3,7 +3,7 @@ layout: "layouts/video.njk"
 title: 'Second Performance'
 date: 2020-12-11T08:04:44.000Z
 description: Rewatch the second performance of the Virtual Comedy Cafe
-youtube: "jWzhSWOK8EE"
+youtube: "a98rxqIelBc"
 coverImage: /static/images/videos/second-performance.jpg
 thumbnail: /static/images/videos/thumbnails/second-performance_tn.jpg
 tags:
