@@ -1,10 +1,5 @@
 # To do
-  - incorporate multi-author
   - update `scss` language
-  - add google tag to footer component
-  - sitemap
-  - feed
-  - google, yandex, bing
   - do I need thumbnail on the homepage or can I just go with coverImage?
     - switched homepage to coverImage and removed thumbnail lets see what happens
 
