@@ -13,19 +13,17 @@ Introduction by Ken Frieden
 
 Performers
 
+* Griffin Parker
+* Lucas Snell
 * Allison Scherger
-* Ryan Micho
-* Rori Sachs
-* Luca Serio
-* Thomas Manning
-* Emily Bright
-* Nathan Fingeret
-* Naama Erez
-* Drew Harley
-* Jacob Bellotti
-* Owen Kingsbury
-* Josh Schneider
-* Annie Gorham
 * Chris Vinh
+* Bridget Gismondi
+* Ryan Micho
+* James Hyman
+* Vanessa Luangaphay
+* Seth Martin, Jr.
+* Gianna Prudente
+* Adam Sperling
+* Jacob Bellotti
 
-Thank you to Stephen Rosenfield and the American Comedy Institute for their Support
+  Thank you to Stephen Rosenfield and the American Comedy Institute for their support!
