@@ -26,7 +26,7 @@ Featuring:
 * Jacob Bellotti
 * Owen Kingsbury
 * Josh Schneider
+* Annie Gorham
+* Chris Vinh
 
-  * Annie Gorham
-
-    * Chris Vinh
+Thank you to Stephen Rosenfield and the American Comedy Institute for their Support
