@@ -1,14 +1,12 @@
 ---
-layout: "layouts/video.njk"
-title: 'Syracuse billboards are the worst'
-date: 2020-06-28T24:04:44.000Z
-description: Annie discusses the absurdity of Syracuse billboards.
-youtube: "5O1kxD5QzLM"
-coverImage: /static/images/videos/annie-gorham-syracuse-billboards.jpg
-thumbnail: /static/images/videos/thumbnails/annie-gorham-syracuse-billboards_tn.jpg
+title: Syracuse Billboards are the Worst
+date: 2020-12-19T13:45:53.072Z
+description: Annie discuss the absurd Syracuse billboards
+coverImage: /static/images/screen-shot-2020-12-19-at-08.36.19.png
+youtube: 501kxD5QzLM
 tags:
   - video
   - comedy
-  - solo
+  - stand-up
 ---
-Annie started writing and performing stand up comedy two years ago and was thrilled to continue in college. Annie feels stand up is some of the most fun she has ever had and hopes to become a comedy writer in the future. She is currently a rising sophomore at Syracuse University with a major in Television, Radio, and Film and a minor in Women's and Gender Studies.
+Annie started writing and performing comedy three years ago and has continued in college. Stand-up has brought her more fun than anything else, and she hopes to become a comedy writer. She is a sophomore at Syracuse University, majoring in Television, Radio, and Film.

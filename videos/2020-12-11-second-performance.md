@@ -11,20 +11,24 @@ tags:
   - comedy
   - show
 ---
-Thank you to the students of the Fall 2020 class **Jewish Humor and Satire** for participating in this wonderful exercise.
+Thank you to the Spring 2020 class **Jewish Humor and Satire** for participating in this wonderful student performance at Syracuse University.
 
 Featuring:
 
-* Performer name
-* name
-* name
-* name
-* name
-* name
-* name
-* name
-* name
-* name
-* name
-* name
-* name
+* MC, Ken Frieden
+* Allison Scherger
+* Ryan Micho
+* Rori Sachs
+* Luca Serio
+* Thomas Manning
+* Emily Bright
+* Nathan Fingeret
+* Naama Erez
+* Drew Harley
+* Jacob Bellotti
+* Owen Kingsbury
+* Josh Schneider
+
+  * Annie Gorham
+
+    * Chris Vinh
