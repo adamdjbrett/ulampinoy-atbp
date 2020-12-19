@@ -7,11 +7,11 @@ youtube: uamjY6dhovs
 tags:
   - video
 ---
-Syracuse University Student Stand-up Show held on Sunday, 22 November 2020. In collaboration with Stephen Rosenfield and the American Comedy Institute.
+Syracuse University Student Stand-up Show held on Sunday, 22 November 2020. In collaboration with Stephen Rosenfield and the American Comedy Institute.  
 
-Introduction by Ken Frieden
+Introduction by Ken Frieden  
 
-Performers
+Performers:
 
 * Griffin Parker
 * Lucas Snell
@@ -26,4 +26,5 @@ Performers
 * Adam Sperling
 * Jacob Bellotti
 
-  Thank you to Stephen Rosenfield and the American Comedy Institute for their support!
+
+Thank you to Stephen Rosenfield and the American Comedy Institute for their support!  

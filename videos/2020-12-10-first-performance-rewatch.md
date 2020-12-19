@@ -24,3 +24,5 @@ Featuring:
 * Emily Simens
 * Jacob Bellotti
 * Allison Scherger
+
+Thank you to Stephen Rosenfield and the American Comedy Institute for their support!  
