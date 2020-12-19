@@ -1,6 +1,6 @@
 ---
 layout: layouts/videos.njk
-title: 'Virtual Comedy Café Videos'
+title: 'Videos'
 tags:
   - nav
 navtitle: Videos
