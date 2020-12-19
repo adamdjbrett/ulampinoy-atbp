@@ -1,6 +1,6 @@
 ---
 title: Third Performance
-date: 2020-12-16T19:14:03.807Z
+date: 2020-12-19T21:14:03.807Z
 description: Rewatch the third performance at the Virtual Comedy Café
 coverImage: /static/images/virtual-comedy-caee-syracuse-show.jpg
 youtube: uamjY6dhovs
