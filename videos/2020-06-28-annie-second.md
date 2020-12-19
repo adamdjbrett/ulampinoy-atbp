@@ -2,7 +2,7 @@
 title: Syracuse Billboards are the Worst
 date: 2020-12-19T13:45:53.072Z
 description: Annie discuss the absurd Syracuse billboards
-coverImage: /static/images/screen-shot-2020-12-19-at-08.36.19.png
+coverImage: /static/images/annie.jpg
 youtube: 501kxD5QzLM
 tags:
   - video

@@ -2,7 +2,7 @@
 title: Taking Classes in My Childhood Bedroom
 date: 2020-12-19T17:49:55.853Z
 description: Ryan tells about taking Syracuse University classes in his childhood bedroom.
-coverImage: /static/images/ryan-micho-01.png
+coverImage: /static/images/ryan-micho-01.jpg
 youtube: ww7JFgmoSmA
 tags:
   - video

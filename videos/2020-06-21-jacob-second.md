@@ -1,11 +1,9 @@
 ---
-layout: "layouts/video.njk"
-title: 'Tinder and trees don‘t mix'
+title: "Tinder and trees don‘t mix"
 date: 2020-06-21T24:04:44.000Z
-description: 'Jacob tells the story of his worst date maybe ever?'
-youtube: "nRhWQhd2oDk"
+description: "Jacob tells the story of his worst date maybe ever?"
 coverImage: /static/images/videos/jacob-bellotti-tinder-trees.jpg
-thumbnail: /static/images/videos/thumbnails/jacob-bellotti-tinder-trees_tn.jpg
+youtube: "nRhWQhd2oDk"
 tags:
   - video
   - comedy

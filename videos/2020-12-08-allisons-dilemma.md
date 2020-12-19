@@ -1,5 +1,4 @@
 ---
-layout: "layouts/video.njk"
 title: "Allison’s Dilemma"
 date: 2020-12-08T17:40:23.801Z
 description: 'There are cures for mental illness, but Allison has another intractable issue.'
