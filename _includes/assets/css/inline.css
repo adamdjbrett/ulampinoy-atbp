@@ -13,7 +13,7 @@
   --usok: #5A5A5A;
   --ulap: #d0d0d0;
   --headlineFont: "Arial Black", sans-serif;
-  --bodyFont: "Arial Black", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+  --bodyFont: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif;
   --sysFont: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif;
@@ -65,11 +65,11 @@ a[href]:visited {
 
 a[href]:hover {
   color: var(--pula);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a[href]:not(:hover) {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 img {
