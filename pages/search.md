@@ -5,6 +5,6 @@ tags:
   - nav
 navtitle: "Search 🔎"
 section: search
-date: 2020-05-11
+date: 2020-12-19
 permalink: /search/
 ---

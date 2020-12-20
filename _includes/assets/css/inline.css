@@ -65,11 +65,11 @@ a[href]:visited {
 
 a[href]:hover {
   color: var(--pula);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a[href]:not(:hover) {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 img {
