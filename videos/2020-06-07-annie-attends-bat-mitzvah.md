@@ -2,7 +2,7 @@
 title: Attending a Bat Mitzvah
 date: 2020-06-07T24:04:44.000Z
 description: Introducing Annie Gorham
-coverImage: /static/images/videos/annie-gorham-bat-mitzvah.jpg
+coverImage: /static/images/annie-screenshot-blur.jpg
 youtube: "IFe674n_IAc"
 tags:
   - video
