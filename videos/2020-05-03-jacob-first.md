@@ -2,7 +2,7 @@
 title: I was an Accident
 date: 2020-05-30T24:04:44.000Z
 description: Introducing Jacob Bellotti
-coverImage: /static/images/videos/jacob-bellotti-accidents.jpg
+coverImage: /static/images/jacob-copy-jpeg.jpg
 youtube: "q5iGqc_3Ksk"
 tags:
   - video
