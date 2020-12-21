@@ -4,14 +4,70 @@ section: search
 permalink: /search/index.html
 ---
 
-<article class="article-post">
-    <div class="article-post-wrapper grid">
-        <header class="pamilya">
-            <h1>Search</h1>
-        </header>
-        <section>
-          <script async src="https://cse.google.com/cse.js?cx=f3fd080bb064a66da"></script>
-          <div class="gcse-search"></div>
-        </section>
-    </div>
-</article>
+
+ <div class="field">
+    <label for="searchField">Search</label>
+    <input type="search" placeholder="Search..." id="searchField">
+  </div>
+  <ol id="searchResults"></ol>
+  <div id="noResultsFound" style="display: none">
+    <p>No results found.</p>
+  </div>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"
+></script>  
+<script>
+(function (window, document) {
+  "use strict";
+
+  const search = (e) => {
+    const results = window.searchIndex.search(e.target.value, {
+      bool: "OR",
+      expand: true,
+    });
+
+    const resEl = document.getElementById("searchResults");
+    const noResultsEl = document.getElementById("noResultsFound");
+
+    resEl.innerHTML = "";
+    if (results) {
+      noResultsEl.style.display = "none";
+      
+      results.map((r) => {        
+        const { id, title, description, summary } = r.doc;
+        const el = document.createElement("li");
+        resEl.appendChild(el);
+
+        const h3 = document.createElement("h3");
+        el.appendChild(h3);
+
+        const a = document.createElement("a");
+        a.setAttribute("href", id);
+        a.textContent = title;
+        h3.appendChild(a);
+
+        const p = document.createElement("p");
+        p.textContent = description;
+        el.appendChild(p);
+
+        const para = document.createElement("p");
+        para.textContent = summary;
+        el.appendChild(para);
+
+      });
+    } else {
+      noResultsEl.style.display = "block";
+    }
+  };
+
+  fetch("/search-index.json").then((response) =>
+    response.json().then((rawIndex) => {
+      window.searchIndex = elasticlunr.Index.load(rawIndex);
+      document.getElementById("searchField").addEventListener("input", search);
+    })
+  );  
+})(window, document);
+
+
+</script>

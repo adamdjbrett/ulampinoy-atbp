@@ -1,23 +1,34 @@
 const { DateTime } = require("luxon");
-const fs = require('fs');
+const fs = require("fs");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const pluginImage = require('eleventy-plugin-image')
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginImage = require("eleventy-plugin-image");
+const lazyImagesPlugin = require("eleventy-plugin-lazyimages");
+const searchFilter = require("./src/filters/searchFilter");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  eleventyConfig.addFilter("search", searchFilter);
+
+  eleventyConfig.addCollection("videos", (collection) => {
+    return [...collection.getFilteredByGlob("./videos/*.md")];
+  });
+
+  eleventyConfig.addCollection("posts", (collection) => {
+    return [...collection.getFilteredByGlob("./posts/*.md")];
+  });
+
   // Date formatting (human readable)
-  eleventyConfig.addFilter("readableDate", dateObj => {
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
   });
 
   // Date formatting (machine readable)
-  eleventyConfig.addFilter("machineDate", dateObj => {
+  eleventyConfig.addFilter("machineDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd");
   });
 
@@ -36,30 +47,28 @@ module.exports = function (eleventyConfig) {
     return minified.code;
   });
 
-
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginImage, {
-        input: 'static/images',
-        output: 'static/images',
-        include: ['img/*.+(jpg|jpeg|png)'],
-        inlineBelow: 10000,
-        compressionLevel: 8,
-        quality: 70,
-        sizes: [255, 400, 600, 1200],
-        webpOptions: { quality: 75, lossless: false, force: true },
-        webp: true,
-        scriptSrc: 'https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js',
-      });
-      eleventyConfig.addPlugin(lazyImagesPlugin, {
-        imgSelector: '.lazyimages img',
-      });
-
+    input: "static/images",
+    output: "static/images",
+    include: ["img/*.+(jpg|jpeg|png)"],
+    inlineBelow: 10000,
+    compressionLevel: 8,
+    quality: 70,
+    sizes: [255, 400, 600, 1200],
+    webpOptions: { quality: 75, lossless: false, force: true },
+    webp: true,
+    scriptSrc: "https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js",
+  });
+  eleventyConfig.addPlugin(lazyImagesPlugin, {
+    imgSelector: ".lazyimages img",
+  });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
   // Minify HTML output
@@ -68,7 +77,7 @@ module.exports = function (eleventyConfig) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
       });
       return minified;
     }
@@ -76,23 +85,22 @@ module.exports = function (eleventyConfig) {
   });
 
   // only content in the `posts/` directory
-  eleventyConfig.addCollection("posts", function (collection) {
-    return collection.getAllSorted().filter(function (item) {
-      return item.inputPath.match(/^\.\/posts\//) !== null;
-    });
-  });
-
+  // eleventyConfig.addCollection("posts", function (collection) {
+  //   return collection.getAllSorted().filter(function (item) {
+  //     return item.inputPath.match(/^\.\/posts\//) !== null;
+  //   });
+  // });
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("static/images/");
   eleventyConfig.addPassthroughCopy("_includes/assets/");
-  eleventyConfig.addPassthroughCopy('admin/config.yml');
+  eleventyConfig.addPassthroughCopy("admin/config.yml");
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
-      ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404.html');
+      ready: function (err, browserSync) {
+        const content_404 = fs.readFileSync("_site/404.html");
 
         browserSync.addMiddleware("*", (req, res) => {
           // Provides the 404 content without redirect.
@@ -102,7 +110,7 @@ module.exports = function (eleventyConfig) {
       },
     },
     ui: false,
-    ghostMode: false
+    ghostMode: false,
   });
 
   /* Markdown Plugins */
@@ -110,12 +118,12 @@ module.exports = function (eleventyConfig) {
   let options = {
     html: true,
     breaks: true,
-    linkify: true
+    linkify: true,
   };
   let opts = {
     permalink: true,
     permalinkClass: "direct-link",
-    permalinkSymbol: "#"
+    permalinkSymbol: "#",
   };
 
   return {
@@ -135,7 +143,7 @@ module.exports = function (eleventyConfig) {
       input: ".",
       includes: "_includes",
       data: "_data",
-      output: "_site"
-    }
+      output: "_site",
+    },
   };
 };
