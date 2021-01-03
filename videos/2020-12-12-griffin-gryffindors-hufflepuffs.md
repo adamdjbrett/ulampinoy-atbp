@@ -1,9 +1,9 @@
 ---
-title: "Griffin, Gryffindors, and Hufflepuffs"
+title: Griffin, Gryffindors, and Dalmatians
 date: 2020-12-12T11:18:07.921Z
-description: "Griffin tells about his struggles, from childhood to college."
-youtube: "Vb9VPb468yY"
+description: Griffin tells about his struggles, from childhood to college.
 coverImage: /static/images/griffin-and-his-dalmation.jpg
+youtube: Vb9VPb468yY
 tags:
   - Stand-up
   - video
