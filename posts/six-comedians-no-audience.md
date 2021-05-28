@@ -1,9 +1,9 @@
 ---
-title: " SIX COMEDIANS NO AUDIENCE"
+title: " SIX COMEDIANS NO AUDIENCE on YouTube "
 date: 2021-06-01T04:10:00.000Z
 description: '"Tell us how quarantine went for you." Six ways of looking at life
   during the COVID-19 pandemic, starting: "This pandemic has turned me into a
-  bum!"'
+  bum!" http://youtu.be/Yc9d5skiJz0'
 coverImage: /static/images/six-monologues-still.jpg
 postSubcategory:
   - Stand-Up
