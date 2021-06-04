@@ -4,7 +4,7 @@ date: 2021-05-31T03:38:03.921Z
 description: Sensational sit-down stand-up by six students at Syracuse
   University. Recipient of the PICS award.
 coverImage: /static/images/six-monologues-still.jpg
-youtube: https://youtu.be/Yc9d5skiJz0
+youtube: Yc9d5skiJz0
 tags:
   - STAND-UP
 ---
