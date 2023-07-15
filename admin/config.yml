@@ -48,3 +48,33 @@ collections:
       - { label: "YouTube", name: "youtube", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["video"] }
       - { label: "Body", name: "body", widget: "markdown" }
+  # Website Config
+  - name: "data"
+    label: "Configuration"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - file: "_data/metadata.json"
+        label: "Settup Website"
+        name: "metadata"
+        widget: 'list'
+        fields:
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'description', label: 'Description', widget: 'string' }
+          - { name: 'url', label: 'URL', widget: 'string'}
+          - name: 'author'
+            label: 'Author' 
+            widget: 'object'
+            fields:
+              - { name: 'name', label: 'Name', widget: 'string' }
+              - { name: 'email', label: 'Email', widget: 'string' }
+              - { name: 'authorHandle', label: 'Author Handle', widget: 'string'}
+          - name: 'feed'
+            label: 'Feed' 
+            widget: 'object'
+            fields:
+              - { name: 'subtitle', label: 'Subtitle', widget: 'string' }
+              - { name: 'filename', label: 'File Name', widget: 'string' }
+              - { name: 'path', label: 'Path', widget: 'string'}
+              - { name: 'id', label: 'ID', widget: 'string'}
